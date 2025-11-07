@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BigMinded — Vision & Business</title>
+  <meta name="description" content="BigMinded — coaching, idées business et stratégies pour gagner en ligne.">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#ff6b35; --muted:#cbd5e1; --glass:rgba(255,255,255,0.04);
+      --maxw:1100px; --radius:14px; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,#071029 0%, #071a2b 100%); color:var(--muted); -webkit-font-smoothing:antialiased;}
+    .wrap{max-width:var(--maxw); margin:32px auto; padding:24px;}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:28px;}
+    .brand{display:flex; align-items:center; gap:12px;}
+    .logo{
+      width:56px; height:56px; border-radius:12px; display:flex; align-items:center; justify-content:center;
+      background:linear-gradient(135deg,var(--accent),#ff9b66); color:white; font-weight:700; font-size:20px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.45);
+    }
+    nav a{color:var(--muted); text-decoration:none; margin-left:18px; font-weight:600;}
+    .hero{display:grid; grid-template-columns:1fr 420px; gap:28px; align-items:center; margin-bottom:30px;}
+    .card{background:var(--card); padding:26px; border-radius:12px; box-shadow:0 8px 30px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.02);}
+    h1{color:white; margin:0 0 14px 0; font-size:28px; line-height:1.05}
+    p.lead{margin:0 0 18px 0; color:#cbd5e1; font-size:15px}
+    .cta{display:inline-block; padding:12px 18px; background:var(--accent); color:white; border-radius:10px; text-decoration:none; font-weight:700;}
+    .features{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:18px;}
+    .feat{background:var(--glass); padding:14px; border-radius:10px; text-align:center;}
+    .small{font-size:13px; color:#9aa7b8}
+    footer{margin-top:34px; text-align:center; color:#9fb0c6; font-size:13px; padding:18px 0;}
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr; text-align:center}
+      nav{display:none}
+      .features{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:520px){
+      .features{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">BM</div>
+        <div>
+          <div style="font-weight:800;color:white">BigMinded</div>
+          <div class="small">@BigMinded · Vision & Business</div>
+        </div>
+      </div>
+      <nav class="small">
+        <a href="#offre">Offre</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h1>Transforme une idée en business rentable — étape par étape 🚀</h1>
+          <p class="lead">Je t'aide à passer du rêve à l'action : stratégie simple, landing page qui vend, et premiers clients en 30 jours.</p>
+          <a class="cta" href="#contact">Obtenir le plan</a>
+
+          <div class="features" style="margin-top:18px">
+            <div class="feat">
+              <div style="font-weight:700">Landing rapide</div>
+              <div class="small">Page qui convertit</div>
+            </div>
+            <div class="feat">
+              <div style="font-weight:700">Contenu TikTok</div>
+              <div class="small">Scripts & hooks viraux</div>
+            </div>
+            <div class="feat">
+              <div style="font-weight:700">Stratégie</div>
+              <div class="small">Plan marketing 30 jours</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="text-align:center">
+          <h2 style="color:white;margin-top:4px">Ton plan en 3 étapes</h2>
+          <ol style="text-align:left;color:var(--muted); margin-top:12px; padding-left:18px">
+            <li><strong>Valide</strong> l'idée avec 10 prospects.</li>
+            <li><strong>Lance</strong> une page + offre simple.</li>
+            <li><strong>Scale</strong> via contenu organique et pub légère.</li>
+          </ol>
+          <p class="small" style="margin-top:10px">Prêt à recevoir ton plan personnalisé ?</p>
+          <a class="cta" href="#contact" style="margin-top:12px; display:inline-block">Oui, prépare</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="a-propos" class="card" style="margin-bottom:18px">
+      <h3 style="color:white;margin:0">À propos</h3>
+      <p class="small" style="margin-top:8px">
+        Je crée des systèmes simples pour que des entrepreneurs comme toi gagnent leurs premiers revenus en ligne — sans se perdre dans les outils.
+      </p>
+    </section>
+
+    <section id="offre" class="card" style="display:flex; gap:18px; flex-wrap:wrap;">
+      <div style="flex:1; min-width:240px">
+        <h4 style="color:white;margin:0">Offre — Starter</h4>
+        <p class="small">Page + script TikTok + checklist de lancement</p>
+      </div>
+      <div style="flex:1; min-width:240px">
+        <h4 style="color:white;margin:0">Offre — Growth</h4>
+        <p class="small">Contenu 30 jours + stratégie publicitaire</p>
+      </div>
+      <div style="flex-basis:200px; text-align:right;">
+        <div style="font-weight:800;color:white;font-size:20px">Contact</div>
+        <div class="small">email@tonmail.com</div>
+        <div class="small" id="contact">WhatsApp: +226 6X XX XX XX</div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> BigMinded — Built on GitHub Pages
+    </footer>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
